@@ -44,6 +44,30 @@ const MOCK_HISTORY_DATA = [
     total: 120,
     deliveryTime: "12:00",
   },
+  {
+    id: "RES-9901",
+    date: "2026-05-28 10:00",
+    type: "reservation",
+    status: "pending",
+    person: "4",
+    reserveDate: "2026-05-29",
+    reserveTime: "18:30",
+    items: [{ id: "m1", name: "Serious Bucket", qty: 1, price: 399 }],
+    total: 399,
+  },
+  {
+    id: "SFC-7712",
+    date: "2026-05-20 18:40",
+    type: "delivery",
+    status: "delivered",
+    items: [
+      { id: "m1", name: "Serious Bucket", qty: 1, price: 399 },
+      { id: "m3", name: "Crispy Tenders", qty: 1, price: 99 },
+    ],
+    total: 498,
+    deliveryTime: "19:10",
+    isReviewed: false,
+  },
 ];
 
 export default function OrderHistoryPage() {
